@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+
+// * Avisamos a axios que todas las peticiones que le hagamos empezaran con esta url
+// axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://pidogsbackend1-production.up.railway.app';
+
 
 // ? CONECTAMOS NUESTRA APP DE REACT CON NUESTRO ESTADO GLOBAL DE REDUX
 import store from './redux/store/store';
