@@ -57,7 +57,7 @@ const rootReducer = (state = iniState, action) => {
 
         case FILTER_BY_ORDER:
             console.log(state.dogs);
-            const arrOrdenado = action.payload === "asc" ?  state.copyDogs.sort((a, b) => {
+            const arrOrdenado = action.payload === "asc" ?  state.dogs.sort((a, b) => {
                 if(a.Name > b.Name){
                     return 1;   // significa que es mayor alfabeticamente
                 }
@@ -66,7 +66,7 @@ const rootReducer = (state = iniState, action) => {
                 }
                 return 0;   // significa que son iguales
                 
-            }) : state.copyDogs.sort((a, b) => {
+            }) : state.dogs.sort((a, b) => {
                 if(a.Name > b.Name){
                     return -1;
                 }
@@ -79,7 +79,7 @@ const rootReducer = (state = iniState, action) => {
             return { ...state, dogs: arrOrdenado }
 
         case FILTER_BY_WEIGHT:
-            const dogs = state.copyDogs;
+            const dogs = state.dogs;
             let arrDogsArreglado = dogs.map((dog) => {
                 if(Array.isArray(dog.Weight)) return dog;
                 let Weight = dog.Weight.split(" - ")

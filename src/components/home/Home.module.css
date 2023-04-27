@@ -112,3 +112,7 @@ img{
 .errMessage{
     color: #942413;
 }
+
+@media (min-width: 900px) and (max-width: 1600px){
+    
+}

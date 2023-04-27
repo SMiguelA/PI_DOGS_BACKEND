@@ -81,3 +81,20 @@ button{
     color: #f7e1c9;
     /* font-size: 15px; */
 }
+
+
+
+
+@media (min-width: 900px) and (max-width: 1600px){
+    .content{
+        margin-left: 20em;
+        margin-right: 20em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .divContInput{
+        margin-top: 4em;
+    }
+    
+}

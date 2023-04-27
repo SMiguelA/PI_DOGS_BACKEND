@@ -106,8 +106,8 @@ const Home = () => {
                 </select>
                 <select name="asc_or_desc_alphavetic" onChange={element => handlerOrder(element)} className={style.select}>
                     <option value="0" disabled selected>Slect...</option>
-                    <option value="asc">Upward</option>
-                    <option value="desc">Falling</option>
+                    <option value="asc">A - Z</option>
+                    <option value="desc">Z - A</option>
                 </select>
                 <select name="mayor_a_menor" onChange={element => handlerWeight(element)} className={style.selectWeight}>
                     <option value="0" disabled selected>Slect...</option>
